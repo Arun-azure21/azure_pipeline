@@ -52,3 +52,9 @@ jobs:
 
     - name: Docker Push
       run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/azure-image
+
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Test Parallel
+      run: echo "Hello World"

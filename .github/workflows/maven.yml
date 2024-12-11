@@ -51,4 +51,4 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
     - name: Docker Push
-      uses: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/azure-image
+      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/azure-image
